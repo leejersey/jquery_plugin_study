@@ -16,10 +16,10 @@
 	<h1>this is a title</h1>
 	<script>
 	$(function(){
-		$.fn.defaults.copies = 10;
+		$.fn.shadow.defaults.copies = 10;
 		$('h1').shadow({
 			copyoffset:function(index){
-				return {x: -index,y:2*index};
+				return {x: -index,y:index};
 			}
 		});
 	})
